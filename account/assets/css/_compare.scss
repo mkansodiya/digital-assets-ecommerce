@@ -1,0 +1,121 @@
+/*-------- 24. Compare style ---------*/
+
+.compare-table {
+    & .table {
+        & tbody {
+            & tr {
+                margin-bottom: 20px;
+                & td {
+                    padding: 20px 20px;
+                    vertical-align: middle;
+                    border-color: #e5e5e5;
+                    color: $black;
+                    @media #{$md-layout} {
+                        padding: 20px 12px;
+                    }
+                    @media #{$xs-layout} {
+                        padding: 10px 15px;
+                    }
+                    &.first-column {
+                        min-width: 175px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin: 0;
+                        @media #{$xs-layout} {
+                            min-width: 120px;
+                        }
+                    }
+                    &.product-image-title {
+                        min-width: 310px;
+                        vertical-align: bottom;
+                        text-align: left;
+                        @media #{$lg-layout} {
+                            min-width: 210px;
+                        }
+                        @media #{$md-layout} {
+                            min-width: 210px;
+                        }
+                        @media #{$xs-layout} {
+                            min-width: 230px;
+                        }
+                        & .image {
+                            clear: both;
+                            width: 100%;
+                            margin-bottom: 15px;
+                            display: block;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        & .category {
+                            float: left;
+                            clear: both;
+                            color: $theme-color;
+                            text-transform: capitalize;
+                            letter-spacing: 0.5px;
+                        }
+                        & .title {
+                            float: left;
+                            clear: both;
+                            font-size: 16px;
+                            line-height: 1.2;
+                            text-transform: capitalize;
+                            margin-top: 5px;
+                            @media #{$md-layout} {
+                                font-size: 16px;
+                            }
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                    &.pro-desc {
+                        & p {
+                            text-align: left;
+                            margin: 0;
+                        }
+                    }
+                    a {
+                        &.check-btn {
+                            color: $black;
+                            font-size: 15px;
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                    &.pro-price,
+                    &.pro-color,
+                    &.pro-stock {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: $black;
+                    }
+                    &.pro-remove {
+                        & button {
+                            border: none;
+                            background-color: transparent;
+                            padding: 0;
+                            cursor: pointer;
+                            &:hover {
+                                color: $theme-color; 
+                            }
+                            & i {
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                    &.pro-ratting {
+                        & i {
+                            color: #e7a415;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------ end Compare Page Wrapper -----*/

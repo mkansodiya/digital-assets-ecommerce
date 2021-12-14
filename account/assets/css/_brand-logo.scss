@@ -1,0 +1,58 @@
+/*-------- 12. Brand logo style ---------*/
+
+.single-brand-logo {
+	text-align: center;
+    display: block;
+    img {
+        max-width: 100%;
+    }
+}
+
+.single-brand-logo-2 {
+	text-align: center;
+    transition: all .5s;
+    display: block;
+    opacity: 1;
+    img {
+        max-width: 100%;
+    }
+    &:hover {
+        opacity: .3;
+    }
+}
+.single-brand-logo-3 {
+	text-align: center;
+    transition: all .5s;
+    display: block;
+    opacity: .4;
+    img {
+        max-width: 100%;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@media #{$md-layout} {
+    .brand-logo-area {
+        &.pb-85 {
+            padding-bottom: 55px;
+        }    
+        &.pb-90 {
+            padding-bottom: 60px;
+        }    
+    }
+}
+@media #{$xs-layout} {
+    .brand-logo-area {
+        &.pb-85 {
+            padding-bottom: 35px;
+        }  
+        &.pb-90 {
+            padding-bottom: 40px;
+        }    
+    }
+}
+
+
+

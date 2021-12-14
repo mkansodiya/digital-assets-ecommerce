@@ -1,0 +1,170 @@
+/*-------- 25. Wishlist style ---------*/
+
+.wishlist-table-content {
+    .table-content {
+        table {
+            width: 100%;
+            thead {
+                > tr {
+                    border-bottom: 1px solid #d1d1d1;
+                    th {
+                        color: #999;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        padding: 0px 12px 14px;
+                        &.width-thumbnail {
+                            min-width: 130px;
+                            @media #{$md-layout} {
+                                min-width: 100px;
+                            }
+                            @media #{$xs-layout} {
+                                min-width: 100px;
+                            }
+                        }
+                        &.width-name {
+                            min-width: 300px;
+                            @media #{$lg-layout} {
+                                min-width: 200px;
+                            }
+                            @media #{$md-layout} {
+                                min-width: 100px;
+                            }
+                            @media #{$xs-layout} {
+                                min-width: 100px;
+                            }
+                        }
+                        &.width-price {
+                            min-width: 162px;
+                            @media #{$md-layout} {
+                                min-width: 120px;
+                            }
+                            @media #{$xs-layout} {
+                                min-width: 120px;
+                            }
+                        }
+                        &.width-stock-status {
+                            min-width: 170px;
+                            @media #{$md-layout} {
+                                min-width: 140px;
+                            }
+                            @media #{$xs-layout} {
+                                min-width: 140px;
+                            }
+                        }
+                        &.width-subtotal {
+                            min-width: 145px;
+                            @media #{$md-layout} {
+                                min-width: 100px;
+                            }
+                            @media #{$xs-layout} {
+                                min-width: 100px;
+                            }
+                        }
+                        &.width-remove {
+                            min-width: 50px;
+                        }
+                    }
+                }
+            }
+            tbody > tr {
+                border-bottom: 1px solid #d1d1d1;
+                td {
+                    padding: 30px 12px;
+                    &.product-thumbnail {
+                        a {
+                            display: block;
+                            img {
+                                width: 80px;
+                            }
+                        }
+                    }
+                    &.product-name {
+                        h5 {
+                            display: block;
+                            font-size: 16px;
+                            color: $black;
+                            @media #{$lg-layout} {
+                                font-size: 14px;
+                            }
+                            @media #{$md-layout} {
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+                            @media #{$xs-layout} {
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+                            a {
+                                color: $black;
+                                &:hover {
+                                    color: $theme-color;
+                                }
+                            }
+                        }
+                    }
+                    &.product-price {
+                        span {
+                            font-size: 16px;
+                            color: $black;
+                        }
+                    }
+                    &.stock-status {
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #9c3;
+                        }
+                    }
+                    &.product-remove {
+                        a {
+                            font-size: 25px;
+                            color: #ccc;
+                            display: inline-block;
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                    &.wishlist-cart {
+                        a {
+                            display: inline-block;
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: $white;
+                            padding: 12px 36px 16px;
+                            line-height: 1;
+                            white-space: pre;
+                            border-radius: 30px;
+                            background-color: $theme-color;
+                            i {
+                                font-size: 18px;
+                                font-weight: 700;
+                                margin-right: 5px;
+                                position: relative;
+                                top: 1px;
+                            }
+                            @media #{$lg-layout} {
+                                padding: 10px 20px 14px;
+                            }
+                            @media #{$md-layout} {
+                                padding: 10px 20px 14px;
+                            }
+                            @media #{$xs-layout} {
+                                font-size: 13px;
+                                padding: 8px 12px 12px;
+                            }
+                            &:hover {
+                                background-color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

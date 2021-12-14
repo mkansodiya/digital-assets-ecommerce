@@ -1,0 +1,315 @@
+/*-------- 06. Feature style ---------*/
+
+.feature-wrap {
+    h3 {
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0 0 2px;
+        line-height: 1.1;
+        position: relative;
+        @media #{$lg-layout} {
+            font-size: 26px;
+        }
+        @media #{$md-layout} {
+            font-size: 24px;
+        }
+        @media #{$xs-layout} {
+            font-size: 22px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 4px;
+            left: 0px;
+            top: -24px;
+            background-color: $theme-color;
+            @media #{$xs-layout} {
+                top: -20px;
+            }
+        }
+    }
+    p {
+        color: #cccccc;
+        line-height: 2;
+        margin: 20px 0 0;
+        width: 60%;
+        @media #{$xl-layout} {
+            width: 72%;
+        }
+        @media #{$lg-layout} {
+            width: 96%;
+        }
+        @media #{$md-layout} {
+            width: 100%;
+        }
+        @media #{$xs-layout} {
+            width: 100%;
+            margin: 5px 0 0;
+        }
+    }
+}
+
+.feature-wrap-2 {
+    h3 {
+        font-weight: 600;
+        font-size: 36px;
+        margin: 0px;
+        @media #{$lg-layout} {
+            font-size: 33px;
+        }
+        @media #{$md-layout} {
+            font-size: 30px;
+        }
+        @media #{$xs-layout} {
+            font-size: 25px;
+        }
+    }
+    p {
+        color: #999;
+        line-height: 2;
+        margin: 38px 0 0;
+        width: 73%;
+        @media #{$xl-layout} {
+            width: 100%;
+        }
+        @media #{$lg-layout} {
+            width: 100%;
+            margin: 25px 0 0;
+        }
+        @media #{$md-layout} {
+            width: 100%;
+            margin: 15px 0 0;
+        }
+        @media #{$xs-layout} {
+            width: 100%;
+            margin: 10px 0 0;
+        }
+    }
+}
+
+.feature-wrap-3 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    @media #{$md-layout} {
+        display: block;
+        text-align: center;
+    }
+    @media #{$xs-layout} {
+        display: block;
+        text-align: center;
+    }
+    .feature-icon {
+        font-size: 36px;
+        color: #999;
+        margin-right: 30px;
+        @media #{$lg-layout} {
+            margin-right: 20px;
+        }
+        @media #{$md-layout} {
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+            margin-right: 0px;
+        }
+        @media #{$xs-layout} {
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+            margin-right: 0px;
+        }
+        i {
+            display: flex;
+            @media #{$md-layout} {
+                display: inline-block;
+                line-height: 1;
+            }
+            @media #{$xs-layout} {
+                display: inline-block;
+                line-height: 1;
+            }
+        }
+        &.theme-color {
+            i {
+                color: $theme-color;
+            }
+        }
+        &.theme-color-red {
+            i {
+                color: $theme-color-red;
+            }
+        }
+        &.icon-black {
+            i {
+                color: $black;
+            }
+        }
+    }
+    .feature-content-3 {
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 3px;
+        }
+        p {
+            color: #999;
+            margin: 0;
+        }
+    }
+    &.feature-white {
+        .feature-icon {
+            color: $white;
+            i {
+                color: $white;
+            }
+        }
+        .feature-content-3 {
+            h4 {
+                color: $white;
+            }
+            p {
+                color: #ccc;
+            }
+        }
+    }
+    &:hover {
+        .feature-icon {
+            color: $theme-color-pink;
+        }
+    }
+}
+.feature-boder-1 {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 100%;
+        background-color: #e0e0e0;
+    }
+    &.feature-boder-1-gray {
+        &:before {
+            background-color: #ad7713;
+        }
+    }
+    @media #{$md-layout} {
+        &.boder-none-md {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    @media #{$xs-layout} {
+        &:before {
+            display: none;
+        }
+    }
+    @media #{$sm-layout} {
+        &.boder-none-md {
+            &:before {
+                display: none;
+            }
+        }
+        &:before {
+            display: block;
+        }
+    }
+    &:last-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.feature-pl {
+    padding-left: 100px;
+    @media #{$md-layout} {
+        padding-left: 0px;
+    }
+    @media #{$xs-layout} {
+        padding-left: 0px;
+    }
+}
+
+.feature-wrap-4 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    @media #{$xs-layout} {
+        justify-content: flex-start;
+    }
+    .feature-icon-2 {
+        margin-right: 30px;
+        @media #{$lg-layout} {
+            margin-right: 15px;
+        }
+        i {
+            font-size: 36px;
+            color: $black;
+        }
+    }
+    .feature-content-4 {
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            margin: 0;
+            @media #{$lg-layout} {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.feature-area-padding {
+    padding: 365px 0 90px;
+    @media #{$md-layout} {
+        padding: 335px 0 52px;
+    }
+    @media #{$xs-layout} {
+        padding: 160px 0 32px;
+    }
+}
+
+@media #{$md-layout} {
+    .feature-area {
+        &.pb-65 {
+            padding-bottom: 32px;
+        }
+        &.pb-80 {
+            padding-bottom: 50px;
+        }
+        &.pb-85 {
+            padding-bottom: 55px;
+        }
+    }
+}
+
+@media #{$xs-layout} {
+    .feature-area {
+        &.pb-65 {
+            padding-bottom: 15px;
+        }
+        &.pb-75 {
+            padding-bottom: 30px;
+        }
+        &.pb-80 {
+            padding-bottom: 30px;
+        }
+        &.pb-85 {
+            padding-bottom: 35px;
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,319 @@
+/*-------- 26. Login register style ---------*/
+
+.checkout-checkbox-style-3 {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        &:checked ~ .checkmark::before {
+            content: "\5a";
+        }
+    }
+    .checkmark {
+        &::before {
+            content: "\56";
+            display: inline-block;
+            font: normal normal normal 14px/1 ElegantIcons;
+            text-rendering: auto;
+            transform: translate(0,0);
+            font-size: 20px;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            transition: .5s;
+            font-weight: 700;
+            color: #666;
+        }
+    }
+}
+
+.login-register-content {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 77px;
+    padding-bottom: 77px;
+    @media #{$md-layout} {
+        margin-bottom: 57px;
+        padding-bottom: 57px;
+    }
+    @media #{$xs-layout} {
+        margin-bottom: 37px;
+        padding-bottom: 37px;
+    }
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 47px;
+        @media #{$xs-layout} {
+            margin: 0 0 27px;
+            font-size: 22px;
+        }
+    }
+    form {
+        .login-register-input {
+            margin-bottom: 25px;
+            input {
+                border: 1px solid #ccc;
+                background-color: #f6f6f6;
+                border-radius: 30px;
+                padding: 25px;
+                font-weight: 500;
+                color: $black;
+                transition: all .5s;
+                text-align: center;
+                width: 100%;
+                @media #{$md-layout} {
+                    padding: 18px 15px;
+                }
+                @media #{$xs-layout} {
+                    padding: 16px 15px;
+                }
+                &::-webkit-input-placeholder {
+                  color: $black;
+                  opacity: 1;
+                }
+                &::-moz-input-placeholder {
+                  color: $black;
+                  opacity: 1;
+                }
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+        .login-register-btn {
+            position: relative;
+            display: inline-block;
+            input {
+                border: none;
+                background-color: #c33;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $white;
+                padding: 18px 75px 18px 50px;
+                border-radius: 50px;
+                cursor: pointer;
+                @media #{$lg-layout} {
+                    padding: 16px 55px 16px 30px;
+                }
+                &:hover {
+                    background-color: $black;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: '\24';
+                font-family: 'ElegantIcons';
+                top: 49%;
+                transform: translateY(-50%);
+                right: 46px;
+                font-size: 18px;
+                color: $white;
+                @media #{$lg-layout} {
+                    right: 25px;
+                }
+            }
+        }
+        .keep-forgot-wrap {
+            display: flex;
+            align-items: center;
+            @media #{$xs-layout} {
+                margin: 25px 0 0px;
+            }
+            .keep-wrap {
+                p {
+                    margin: 0 0 0 28px;
+                    font-size: 13px;
+                }
+            }
+            .forget-wrap {
+                margin-left: 30px;
+                a {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #19c2c8;
+                    display: inline-block;
+                }
+            }
+        }
+        .agree-wrap {
+            margin: 0px 0 25px;
+            p {
+                margin: 0 0 0 28px;
+                font-size: 13px;
+                a {
+                    color: $theme-color;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-register-2-area {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+    position: relative;
+    &::before {
+        background-color: rgba(0,0,0,.75);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .login-register-2-content {
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        padding-top: 65px;
+        @media #{$xs-layout} {
+            padding-top: 130px;
+            padding-bottom: 70px;
+        }
+        h2 {
+            font-size: 36px;
+            color: $white;
+            margin: 0 0 26px;
+            @media #{$lg-layout} {
+                font-size: 30px;
+            }
+            @media #{$md-layout} {
+                font-size: 27px;
+            }
+            @media #{$xs-layout} {
+                font-size: 25px;
+                margin: 0 0 15px;
+            }
+        }
+        .login-register-2-input {
+            position: relative;
+            margin: 0 0 18px;
+            input {
+                height: 43px;
+                border: none;
+                border-bottom: 1px solid rgba(255,255,255,.25);
+                background-color: transparent;
+                color: #ccc;
+                width: 100%;
+                padding: 0 70px 0 0;
+                &::-webkit-input-placeholder {
+                    color: #ccc;
+                    opacity: 1;
+                }
+                &::-moz-input-placeholder {
+                    color: #ccc;
+                    opacity: 1;
+                }
+                &:focus {
+                    border-bottom: 1px solid rgba(255,255,255,.5);
+                }
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                color: #ccc;
+            }
+        }
+        .stay-logged-wrap {
+            margin: 27px 0 48px;
+            @media #{$xs-layout} {
+                margin: 27px 0 20px;
+            }
+            p {
+                font-size: 13px;
+                color: #ccc;
+                margin: 0 0 0 35px;
+                a {
+                    color: $theme-color;
+                }
+            }
+        }
+        .login-register-2-btn {
+            button {
+                border: none;
+                color: $white;
+                background-color: $theme-color;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-radius: 50px;
+                transition: all .5s;
+                font-weight: 600;
+                padding: 18px 40px;
+                line-height: 1;
+                i {
+                    font-size: 14px;
+                    margin: 0 0 0 5px;
+                }
+                @media #{$xs-layout} {
+                    padding: 14px 30px;
+                }
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
+}
+
+.login-register-2-mr {
+    margin-right: 70px;
+    @media #{$lg-layout} {
+        margin-right: 50px;
+    }
+    @media #{$md-layout} {
+        margin-right: 30px;
+    }
+    @media #{$xs-layout} {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+
+.checkout-checkbox-style-4 {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        &:checked ~ .checkmark::before {
+            content: "\f400";
+        }
+    }
+    .checkmark {
+        &::before {
+            content: "\f401";
+            display: inline-block;
+            font: normal normal normal 14px/1 ionicons;
+            text-rendering: auto;
+            transform: translate(0,0);
+            font-size: 24px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: .5s;
+            font-weight: 700;
+            color: #666;
+        }
+    }
+}
+
+
+

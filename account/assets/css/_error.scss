@@ -1,0 +1,105 @@
+/*-------- 21. Error style ---------*/
+
+.error-area {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+    position: relative;
+    &::before {
+        background-color: rgba(0,0,0,.75);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .error-content {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        h1 {
+            font-size: 150px;
+            color: $white;
+            margin: 0;
+            font-weight: 600;
+            line-height: 1;
+            @media #{$lg-layout} {
+                font-size: 130px;
+            }
+            @media #{$md-layout} {
+                font-size: 120px;
+            }
+            @media #{$xs-layout} {
+                font-size: 100px;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $white;
+            margin: 20px 0 12px;
+            @media #{$xs-layout} {
+                font-size: 23px;
+            }
+        }
+        p {
+            color: $white;
+            margin: 0 0 43px;
+            a {
+                display: inline-block;
+                color: $theme-color;
+                text-decoration: underline;
+            }
+        }
+        .search-style-4 {
+            width: 370px;
+            margin: 0 auto;
+            @media #{$xs-layout} {
+                width: 100%;
+            }
+            form {
+                position: relative;
+                input {
+                    border: none;
+                    background-color: $white;
+                    width: 100%;
+                    height: 53px;
+                    padding: 2px 50px 2px 25px;
+                    border-radius: 25px;
+                    color: #666;
+                    &::-webkit-input-placeholder {
+                      color: #666;
+                      opacity: 1;
+                    }
+                    &::-moz-input-placeholder {
+                      color: #666;
+                      opacity: 1;
+                    }
+                }
+                button {
+                    &.button-search-4 {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 18px;
+                        border: none;
+                        padding: 0;
+                        background-color: transparent;
+                        font-size: 18px;
+                        color: #999;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

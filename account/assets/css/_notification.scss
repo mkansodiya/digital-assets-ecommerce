@@ -1,0 +1,131 @@
+/*-------- 05. About us style ---------*/
+
+
+.notification-area {
+	background-color: #BE2230;
+}
+.notification-padding-1 {
+	padding: 25px 0 18px;
+    @media #{$xs-layout} {
+        padding: 35px 0 25px;
+    }
+}
+.notification-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 165px;
+    @media #{$xs-layout} {
+        display: block;
+        padding-right: 10px;
+    }
+    .notification-content-left {
+        text-align: right;
+        margin-right: 17px;
+        @media #{$xs-layout} {
+            text-align: center;
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            color: $white;
+            line-height: 1.7;
+            margin: 2px 0 0 auto;
+            width: 69%;
+            @media #{$md-layout} {
+                width: 100%;
+            }
+            @media #{$xs-layout} {
+                width: 100%;
+            }
+        }
+    }
+    .notification-content-right {
+        margin-left: 17px;
+        @media #{$xs-layout} {
+            margin-left: 0px;
+            text-align: center;
+        }
+        span {
+            color: #ff9999;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 60px;
+            color: $white;
+            margin: 4px 0 0;
+            font-family: $prata;
+            @media #{$xs-layout} {
+                font-size: 40px;
+            }
+        }
+    }
+    .notification-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        button {
+            border: none;
+            text-transform: uppercase;
+            color: $white;
+            font-family: $poppins;
+            background-color: rgba(0,0,0,.5);
+            padding: 5px 13px;
+            display: flex;
+            line-height: 1;
+            align-items: center;
+            transition: all .3s ease 0s;
+            i {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            &:hover {
+                background-color: rgba(0,0,0,1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

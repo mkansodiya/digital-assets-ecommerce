@@ -1,0 +1,54 @@
+/*-------- 20. Faq style ---------*/
+
+.single-faq {
+    .accordion-item {
+        margin-bottom: 75px;
+        border: none;
+        @media #{$xs-layout} {
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        h2 {
+            button {
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: -1px;
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+                @media #{$md-layout} {
+                    font-size: 27px;
+                }
+                @media #{$xs-layout} {
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: left;
+                }
+            }
+        }
+        .accordion-collapse {
+            border: none;
+            .accordion-body {
+                padding: 30px 0 0 0;
+                @media #{$md-layout} {
+                    padding: 20px 0 0 0;
+                }
+                @media #{$xs-layout} {
+                    padding: 15px 0 0 0;
+                }
+                p {
+                    color: #666;
+                    line-height: 1.8;
+                    text-align: justify;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,456 @@
+/*-------- 24. Checkout style ---------*/
+
+.customer-zone {
+    > p {
+        position: relative;
+        padding: 32px 30px 32px 80px;
+        background-color: #f6f6f6;
+        margin: 0 0 0px;
+        position: relative;
+        color: #666;
+        a {
+            color: $black;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+        @media #{$xs-layout} {
+            padding: 14px 30px 14px 40px;
+        }
+        &:before {
+            content: "\76";
+            color: #999;
+            display: inline-block;
+            position: absolute;
+            font-family: 'ElegantIcons';
+            left: 30px;
+            top: 33px;
+            font-size: 17px;
+            @media #{$xs-layout} {
+                left: 10px;
+                top: 15px;
+            }
+        }
+    }
+}
+
+.checkout-login-info {
+    padding: 22px 20px 15px;
+    border: 1px solid #d3ced2;
+    display: none;
+    margin-top: 30px;
+    p {
+        line-height: 2;
+        margin: 0 0 12px;
+    }
+    form {
+        display: block;
+        overflow: hidden;
+        .sin-checkout-login {
+            margin-bottom: 30px;
+            label {
+                color: #666;
+                text-transform: capitalize;
+                margin: 0 0 11px;
+                span {
+                    color: red;
+                }
+            }
+            input {
+                height: 54px;
+                background-color: transparent;
+                border: 1px solid #ccc;
+                width: 100%;
+                padding: 5px 25px;
+            }
+        }
+        .checkout-remember {
+            display: flex;
+            p {
+                margin: -1px 0 0 30px;
+                color: $black;
+                font-weight: 500;
+                a {
+                    color: $black;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        .checkout-login-btn {
+            margin: 18px 0 15px;
+            button {
+                border: none;
+                background-color: $theme-color;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 15px 79px;
+                border-radius: 30px;
+                transition: all .3s ease 0s;
+                &:hover {
+                    background-color: $black;
+                }
+            }
+        }
+        .lost-password {
+            margin: 20px 0 11px;
+            a {
+                color: $theme-color;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+.checkout-login-info3 {
+    padding: 20px;
+    border: 1px solid #d3ced2;
+    margin-top: 30px;
+    display: none;
+    form {
+        input[type="text"] {
+            height: 54px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: 5px 25px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            border: none;
+            background-color: $theme-color;
+            color: $white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 15px 47px;
+            border-radius: 30px;
+            transition: all .3s ease 0s;
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }
+}
+
+.checkout-checkbox-style {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        &:checked ~ .checkmark::before {
+            content: "\5a";
+        }
+    }
+    .checkmark {
+        &::before {
+            content: "\56";
+            display: inline-block;
+            font: normal normal normal 14px/1 ElegantIcons;
+            text-rendering: auto;
+            transform: translate(0,0);
+            font-size: 20px;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            transition: .5s;
+            font-weight: 700;
+            color: $black;
+        }
+    }
+}
+
+.checkout-checkbox-style-2 {
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        &:checked ~ .checkmark::before {
+            content: "\5a";
+        }
+    }
+    .checkmark {
+        &::before {
+            content: "\56";
+            display: inline-block;
+            font: normal normal normal 14px/1 ElegantIcons;
+            text-rendering: auto;
+            transform: translate(0,0);
+            font-size: 20px;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            transition: .5s;
+            font-weight: 700;
+            color: $black;
+        }
+    }
+}
+
+.billing-info-wrap {
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+    }
+    .billing-info {
+        margin: 0 0 20px;
+        label {
+            color: #666;
+            margin: 0 0 11px;
+            span {
+                color: red;
+            }
+        }
+        input {
+            height: 54px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: 5px 25px;
+            color: #666;
+            &.billing-address {
+                margin-bottom: 22px;
+            }
+            &::-webkit-input-placeholder {
+              color: #666;
+              opacity: 1;
+            }
+            &::-moz-input-placeholder {
+              color: #666;
+              opacity: 1;
+            }
+        }
+    }
+    .billing-select {
+        margin: 0 0 20px;
+        label {
+            color: #666;
+            margin: 0 0 11px;
+            span {
+                color: red;
+            }
+        }
+        select {
+            height: 54px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: 5px 25px;
+            color: #666;
+            cursor: pointer;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: rgba(0,0,0,0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
+        }
+    }
+    .checkout-account {
+        p {
+            padding: 0 0 0 30px;
+            font-weight: 500;
+            color: $black;
+        }
+    }
+    .additional-info-wrap {
+        label {
+            color: #666;
+            margin: 0 0 11px;
+            span {
+                color: red;
+            }
+        }
+        textarea {
+            height: 100px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: 10px;
+            color: #666;
+            &::-webkit-textarea-placeholder {
+              color: #666;
+              opacity: 1;
+            }
+            &::-moz-textarea-placeholder {
+              color: #666;
+              opacity: 1;
+            }
+        }
+    }
+}
+.checkout-account-toggle-wrap {
+	display: none;
+}
+
+.different-address {
+	display: none;
+}
+
+.your-order-area {
+    @media #{$md-layout} {
+        margin-top: 50px;
+    }
+    @media #{$xs-layout} {
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+    }
+    .your-order-wrap {
+        padding: 30px;
+        background-color: #f2f2f2;
+        .your-order-info-wrap {
+            .your-order-title {
+                ul {
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 600;
+                        color: #666;
+                        border-bottom: 1px solid #ccc;
+                        padding-bottom: 25px;
+                        margin-bottom: 26px;
+                    }
+                }
+            }
+            .your-order-product {
+                ul {
+                    li {
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .your-order-subtotal {
+                padding: 17px 0 23px;
+                ul {
+                    li {
+                        font-size: 18px;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+            .your-order-total {
+                border-bottom: 1px solid #ccc;
+                border-top: 1px solid #ccc;
+                ul {
+                    li {
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 23px 0 22px;
+                        span {
+                            font-weight: 700;
+                            color: #c33;
+                            font-size: 24px;
+                            display: inline-block;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .payment-method {
+            margin: 40px 0 0;
+            .sin-payment {
+                margin-bottom: 23px;
+                input {
+                    width: auto;
+                    display: inline-block;
+                    float: left;
+                    height: auto;
+                    margin-top: 3px;
+                    cursor: pointer;
+                }
+                label {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin: 0px 0 0 29px;
+                    display: flex;
+                    align-items: center;
+                    font-family: $montserrat;
+                    cursor: pointer;
+                    @media #{$xs-layout} {
+                        display: block;
+                    }
+                    img {
+                        max-width: 140px;
+                        display: inline-block;
+                        margin: 0 5px
+                    }
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+                .payment-box {
+                    margin: 6px 0 0;
+                    display: none;
+                    p {
+                        font-size: 13px;
+                        margin: 0;
+                        padding: 0 0 0 30px;
+                    }
+                }
+            }
+        }
+    }
+    .order-conditions {
+        margin: 23px 0;
+        p {
+            font-weight: 500;
+            margin: 0 0 0 30px;
+            color: $black;
+            a {
+                color: $theme-color;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+    .Place-order {
+        a {
+            background-color: $theme-color;
+            color: $white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 15px 79px;
+            border-radius: 30px;
+            transition: all .3s ease 0s;
+            display: block;
+            text-align: center;
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }
+}
+
+
+
